@@ -1,0 +1,124 @@
+--bgtl (better gui to lua) made by "Cozapierdolonychuj" on roblox
+local MainUIElements = {}
+MainUIElements["ScreenGui"] = Instance.new("ScreenGui")
+MainUIElements["Main"] = Instance.new("Frame")
+MainUIElements["UICorner"] = Instance.new("UICorner")
+MainUIElements["UIStroke"] = Instance.new("UIStroke")
+MainUIElements["TextLabel"] = Instance.new("TextLabel")
+MainUIElements["TextButton"] = Instance.new("TextButton")
+MainUIElements["Load Bar"] = Instance.new("Frame")
+MainUIElements["UICorner_1"] = Instance.new("UICorner")
+MainUIElements["Load"] = Instance.new("Frame")
+MainUIElements["UICorner_2"] = Instance.new("UICorner")
+MainUIElements["UIStroke_3"] = Instance.new("UIStroke")
+MainUIElements["ScreenGui"].ResetOnSpawn = false
+MainUIElements["ScreenGui"].Archivable = true
+MainUIElements["ScreenGui"].Name = "ScreenGui"
+MainUIElements["ScreenGui"].ZIndexBehavior = Enum.ZIndexBehavior.Global
+MainUIElements["Main"].Archivable = true
+MainUIElements["Main"].Name = "Main"
+MainUIElements["Main"].Parent = MainUIElements["ScreenGui"]
+MainUIElements["Main"].ZIndex = 1
+MainUIElements["Main"].AutomaticSize = Enum.AutomaticSize.None
+MainUIElements["Main"].Size = UDim2.new(0, 355,0, 117)
+MainUIElements["Main"].BorderColor3 = Color3.fromRGB(27.000002190470695,42.000001296401024,53.000004440546036)
+MainUIElements["Main"].Position = UDim2.new(0.388328195, 0,0.430808723, 0)
+MainUIElements["Main"].BackgroundColor3 = Color3.fromRGB(29.000002071261406,29.000002071261406,29.000002071261406)
+MainUIElements["UICorner"].Archivable = true
+MainUIElements["UICorner"].Name = "UICorner"
+MainUIElements["UICorner"].Parent = MainUIElements["Main"]
+MainUIElements["UICorner"].CornerRadius = UDim.new(0, 9)
+MainUIElements["UIStroke"].Archivable = true
+MainUIElements["UIStroke"].Name = "UIStroke"
+MainUIElements["UIStroke"].Parent = MainUIElements["Main"]
+MainUIElements["UIStroke"].Color = Color3.fromRGB(255,0,0)
+MainUIElements["TextLabel"].Archivable = true
+MainUIElements["TextLabel"].Name = "TextLabel"
+MainUIElements["TextLabel"].Parent = MainUIElements["Main"]
+MainUIElements["TextLabel"].ZIndex = 1
+MainUIElements["TextLabel"].AutomaticSize = Enum.AutomaticSize.None
+MainUIElements["TextLabel"].Size = UDim2.new(0, 197,0, 36)
+MainUIElements["TextLabel"].TextSize = 23
+MainUIElements["TextLabel"].BorderColor3 = Color3.fromRGB(27.000002190470695,42.000001296401024,53.000004440546036)
+MainUIElements["TextLabel"].Text = ""
+MainUIElements["TextLabel"].TextColor3 = Color3.fromRGB(221.00001722574234,35.00000171363354,63.00000384449959)
+MainUIElements["TextLabel"].Font = Enum.Font.SourceSans
+MainUIElements["TextLabel"].BackgroundTransparency = 1
+MainUIElements["TextLabel"].Position = UDim2.new(0.219929561, 0,0.341880351, 0)
+MainUIElements["TextLabel"].BackgroundColor3 = Color3.fromRGB(255,255,255)
+MainUIElements["TextButton"].Archivable = true
+MainUIElements["TextButton"].Name = "TextButton"
+MainUIElements["TextButton"].Parent = MainUIElements["Main"]
+MainUIElements["TextButton"].TextStrokeTransparency = 0
+MainUIElements["TextButton"].ZIndex = 1
+MainUIElements["TextButton"].BackgroundColor3 = Color3.fromRGB(255,255,255)
+MainUIElements["TextButton"].AutomaticSize = Enum.AutomaticSize.None
+MainUIElements["TextButton"].Size = UDim2.new(0, 167,0, 48)
+MainUIElements["TextButton"].BorderColor3 = Color3.fromRGB(27.000002190470695,42.000001296401024,53.000004440546036)
+MainUIElements["TextButton"].Text = "xDeveloper Community"
+MainUIElements["TextButton"].Font = Enum.Font.SciFi
+MainUIElements["TextButton"].BackgroundTransparency = 1
+MainUIElements["TextButton"].Position = UDim2.new(0.264788747, 0,0, 0)
+MainUIElements["TextButton"].TextSize = 29
+MainUIElements["TextButton"].TextColor3 = Color3.fromRGB(134.00000721216202,134.00000721216202,134.00000721216202)
+MainUIElements["Load Bar"].Archivable = true
+MainUIElements["Load Bar"].Name = "Load Bar"
+MainUIElements["Load Bar"].Parent = MainUIElements["Main"]
+MainUIElements["Load Bar"].ZIndex = 1
+MainUIElements["Load Bar"].AutomaticSize = Enum.AutomaticSize.None
+MainUIElements["Load Bar"].Size = UDim2.new(0, 336,0, 6)
+MainUIElements["Load Bar"].BorderColor3 = Color3.fromRGB(27.000002190470695,42.000001296401024,53.000004440546036)
+MainUIElements["Load Bar"].Position = UDim2.new(0.0253521129, 0,0.786324799, 0)
+MainUIElements["Load Bar"].BackgroundColor3 = Color3.fromRGB(255,255,255)
+MainUIElements["UICorner_1"].Archivable = true
+MainUIElements["UICorner_1"].Name = "UICorner"
+MainUIElements["UICorner_1"].Parent = MainUIElements["Load Bar"]
+MainUIElements["Load"].Archivable = true
+MainUIElements["Load"].Name = "Load"
+MainUIElements["Load"].Parent = MainUIElements["Load Bar"]
+MainUIElements["Load"].ZIndex = 1
+MainUIElements["Load"].AutomaticSize = Enum.AutomaticSize.None
+MainUIElements["Load"].Size = UDim2.new(0, 0,0, 5)
+MainUIElements["Load"].BorderColor3 = Color3.fromRGB(27.000002190470695,42.000001296401024,53.000004440546036)
+MainUIElements["Load"].Position = UDim2.new(0, 0,0, 0)
+MainUIElements["Load"].BackgroundColor3 = Color3.fromRGB(255,0,0)
+MainUIElements["UICorner_2"].Archivable = true
+MainUIElements["UICorner_2"].Name = "UICorner"
+MainUIElements["UICorner_2"].Parent = MainUIElements["Load"]
+MainUIElements["UIStroke_3"].Archivable = true
+MainUIElements["UIStroke_3"].Name = "UIStroke"
+MainUIElements["UIStroke_3"].Parent = MainUIElements["Load Bar"]
+MainUIElements["UIStroke_3"].Color = Color3.fromRGB(0,255,247.00001567602158)
+MainUIElements["UIStroke_3"].Thickness = 1.5
+MainUIElements["ScreenGui"].Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+local function script_hoktsqnzac_LocalScript_4()
+	local script = Instance.new("LocalScript",MainUIElements["Load"])
+	MainUIElements["LocalScript_4"] = script
+	script.Name = "LocalScript"
+	script.Archivable = true
+	
+	local base = script.Parent
+	
+	wait(1)
+	base:TweenSize(UDim2.new(0, 336,0, 5),"Out","Linear",6)
+	wait(7)
+	script.Parent.Parent.Parent.Visible = false
+end
+coroutine.wrap(script_hoktsqnzac_LocalScript_4)()
+local function script_azielyzujt_LocalScript_5()
+	local script = Instance.new("LocalScript",MainUIElements["Main"])
+	MainUIElements["LocalScript_5"] = script
+	script.Name = "LocalScript"
+	script.Archivable = true
+	script.Parent.TextLabel.Text = "◈ Welcome   "..game.Players.LocalPlayer.Name
+		wait(1.2)
+	script.Parent.TextLabel.Text = "◈ Check Game ◈"
+	    wait(1.2)
+	script.Parent.TextLabel.Text = "◈ Check Whitelist ◈"
+		wait(1.2)
+	script.Parent.TextLabel.Text = "◈ Check HWID ◈"
+	    wait(1.2)
+	script.Parent.TextLabel.Text = "◈ Execute Script ◈"
+	    wait(1.2)
+end
+coroutine.wrap(script_azielyzujt_LocalScript_5)()
