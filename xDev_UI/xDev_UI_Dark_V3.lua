@@ -15,9 +15,7 @@ if game.CoreGui:FindFirstChild("MarkBeatsIsGay") then
  local RunService = game:GetService("RunService")
  local LocalPlayer = game:GetService("Players").LocalPlayer
  local Mouse = LocalPlayer:GetMouse()
-local marketplaceService = game:GetService("MarketplaceService")
-local isSuccessful, info = pcall(marketplaceService.GetProductInfo, marketplaceService, game.PlaceId)
- local HUB = "BxB HUB  ◈  [ "..info.Name.." ]"
+ 
  
  coroutine.wrap(
    function()
@@ -138,8 +136,6 @@ local isSuccessful, info = pcall(marketplaceService.GetProductInfo, marketplaceS
    local TabHolderUIList = Instance.new("UIListLayout")
    local TabHolderPadding = Instance.new("UIPadding")
    local Glow_3 = Instance.new("ImageLabel")
- 
-   
    local marketplaceService = game:GetService("MarketplaceService")
    local isSuccessful, info = pcall(marketplaceService.GetProductInfo, marketplaceService, game.PlaceId)
  
@@ -161,7 +157,7 @@ local isSuccessful, info = pcall(marketplaceService.GetProductInfo, marketplaceS
    Title.Position = UDim2.new(0.42778793, 0, 0.041837737, 0)
    Title.Size = UDim2.new(0, 78, 0, 30)
    Title.Font = Enum.Font.Gotham
-   Title.Text = HUB
+   Title.Text = "BxB HUB  ◈  [ "..info.Name.." ]"
    Title.TextColor3 = Color3.fromRGB(168, 168, 168)
    Title.TextSize = 20.000
  
