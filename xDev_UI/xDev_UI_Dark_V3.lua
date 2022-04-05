@@ -15,6 +15,8 @@ if game.CoreGui:FindFirstChild("MarkBeatsIsGay") then
  local RunService = game:GetService("RunService")
  local LocalPlayer = game:GetService("Players").LocalPlayer
  local Mouse = LocalPlayer:GetMouse()
+local marketplaceService = game:GetService("MarketplaceService")
+local isSuccessful, info = pcall(marketplaceService.GetProductInfo, marketplaceService, game.PlaceId)
  local HUB = "BxB HUB  ◈  [ "..info.Name.." ]"
  
  coroutine.wrap(
