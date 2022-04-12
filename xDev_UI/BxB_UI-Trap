@@ -357,10 +357,10 @@ function Blacklib:Window()
     local function UpdateOS()
         local date = os.date("*t")
         local hour = (date.hour) % 24
-        local ampm = hour < 12 and "AM" or "PM"
+        local ampm = hour < 12 and "AM " or "PM "
         local timezone = string.format("%02i:%02i:%02i %s", ((hour -1) % 12) + 1, date.min, date.sec, ampm)
         local datetime = string.format("%02d/%02d/%04d", date.day, date.month, date.year)
-        osfunc:Refresh(datetime.." - "..timezone)
+        osfunc:Refresh(datetime.." - "..timezone.." ")
     end
     spawn(function()
         while true do
