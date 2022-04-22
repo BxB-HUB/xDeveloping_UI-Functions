@@ -914,7 +914,7 @@ function Library:create(options)
 	}
 
 	local creditsTab = Library.tab(mt, {
-		Name = "Credits",
+		Name = "INFO ",
 		Internal = creditsTabIcon,
 		Icon = "http://www.roblox.com/asset/?id=8577523456"
 	})
